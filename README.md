@@ -1,3 +1,8 @@
+# Updates for Chai
+
+Model Registry has been updated to interact with Chai Models. Refer to ```lm_eval/models/chai.py```    
+
+
 # Language Model Evaluation Harness
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10256836.svg)](https://doi.org/10.5281/zenodo.10256836)
