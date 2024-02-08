@@ -1,5 +1,6 @@
 from typing import Any, List, Tuple
 from tqdm import tqdm
+from chaiverse.http_client import SubmitterClient
 
 from lm_eval import utils
 from lm_eval.api.model import LM
@@ -43,14 +44,6 @@ class ChaiLM(LM):
             Additional model_args to pass to the API client - NOT USED YET
         """
         super().__init__()
-
-        try:
-            from chaiverse.http_client import SubmitterClient
-        except ModuleNotFoundError:
-            raise Exception(
-                "attempted to use 'chai' LM type, but package `chaiverse` is not installed. \
-please install chaiverse via `pip install chaiverse`",
-            )
 
         self.submission_id = submission_id
         self.developer_key = developer_key

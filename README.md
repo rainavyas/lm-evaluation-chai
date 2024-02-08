@@ -6,8 +6,8 @@ Example of use:
 
 ```bash
 lm_eval --model chai \
-    --model_args submission_id=<submission_id> developer_key=<developer_key> \
-    --tasks hellaswag mmlu winogrande \
+    --model_args submission_id=<submission_id>,developer_key=<developer_key> \
+    --tasks mmlu_flan_n_shot_generative \
 ```
 
 
