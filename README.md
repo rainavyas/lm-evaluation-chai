@@ -1,6 +1,14 @@
 # Updates for Chai
 
-Model Registry has been updated to interact with Chai Models. Refer to ```lm_eval/models/chai.py```    
+Model Registry has been updated to interact with Chai Models. Refer to ```lm_eval/models/chai.py```
+
+Example of use:
+
+```bash
+lm_eval --model chai \
+    --model_args submission_id=<submission_id> developer_key=<developer_key> \
+    --tasks hellaswag mmlu winogrande \
+```
 
 
 # Language Model Evaluation Harness
