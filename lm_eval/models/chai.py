@@ -1,6 +1,7 @@
 from typing import Any, List, Tuple
 from tqdm import tqdm
 from chaiverse.http_client import SubmitterClient
+import time
 
 from lm_eval import utils
 from lm_eval.api.model import LM
@@ -89,6 +90,7 @@ class ChaiLM(LM):
 
         res = []
         for request in tqdm(_requests):
+            time.sleep(2) # limit request rate
             inp = request[0]
             response = chai_predict(
                 inp,
