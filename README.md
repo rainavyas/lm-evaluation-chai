@@ -10,6 +10,11 @@ lm_eval --model chai \
     --tasks mmlu_flan_n_shot_generative \
 ```
 
+## Approximate Request Rates
+
+| dataset | num test examples | requests (/s) |
+| :-----: | :----: | :------: |
+| MMLU    | 14k | 1.0 |
 
 # Language Model Evaluation Harness
 
