@@ -8,6 +8,9 @@ Example of use:
 lm_eval --model chai \
     --model_args submission_id=<submission_id>,developer_key=<developer_key> \
     --tasks mmlu_flan_n_shot_generative \
+    --num_fewshot 5
+    --log_samples
+    --output_path outputs/model-name
 ```
 
 ## Approximate Request Rates
